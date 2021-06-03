@@ -1,0 +1,93 @@
+header {
+  background-color: white;
+  font-family: "arial";
+
+  z-index: 999;
+
+  position: fixed;
+  width: 100%;
+}
+#mainNav ul {
+  list-style: none;
+  margin: 0px;
+  padding-inline-start: 0px;
+  box-shadow: 0 1px 10px #777 !important;
+}
+#mainNav ul li {
+  display: inline-block;
+  display: inline;
+  margin: 20px;
+  @media only screen and (max-width: 600px) {
+    margin: 10px;
+  }
+}
+#mainNav ul li a {
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #0e538c;
+}
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+  transition: all 0.5s;
+}
+#mainNav {
+  height: 48px !important;
+  text-align: center;
+  line-height: 3;
+  text-transform: uppercase;
+}
+
+/* stroke */
+#mainNav.stroke ul li a {
+  position: relative;
+}
+#mainNav.stroke ul li a:after,
+#mainNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #0e538c;
+  height: 1px;
+}
+#mainNav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+#mainNav ul li a {
+  transition: all 0.75s;
+  -webkit-transition: all 0.75s;
+  -o-transition: all 0.75s;
+}
+
+#mainNav ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+#mainNav ul li a:hover {
+  color: #ffbe55;
+  z-index: 1;
+  cursor: pointer;
+}
+#mainNav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+#appTitle a {
+  z-index: 1;
+  cursor: pointer;
+  font-weight: bold;
+}
