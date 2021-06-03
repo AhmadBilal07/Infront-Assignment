@@ -68,6 +68,11 @@ const users = [
         "symbol": "KPN.NL",
         "shares": "2",
         "buyPrice": "45"
+      },
+      {
+        "symbol": "NN.NL",
+        "shares": "5",
+        "buyPrice": "10"
       }
     ]
   },

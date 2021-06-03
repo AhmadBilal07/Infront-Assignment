@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const history = useHistory();
   function validateForm() {
     return email.length > 0 && password.length > 0;
   }
@@ -19,9 +20,9 @@ const Login = (props) => {
       .then((response) => {
         props.onLogin(response.data.userID);
         alert("Login Successful");
-        //window.location.href = "/home";
         setEmail("");
         setPassword("");
+        history.push("/home");
       })
       .catch((err) => {
         alert(err.message);

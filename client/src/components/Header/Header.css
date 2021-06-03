@@ -1,25 +1,19 @@
 header {
   background-color: white;
   font-family: "arial";
-
   z-index: 999;
-
-  position: fixed;
   width: 100%;
+  margin-bottom: 10px;
 }
 #mainNav ul {
   list-style: none;
   margin: 0px;
   padding-inline-start: 0px;
   box-shadow: 0 1px 10px #777 !important;
+  height: 50px;
 }
 #mainNav ul li {
-  display: inline-block;
-  display: inline;
   margin: 20px;
-  @media only screen and (max-width: 600px) {
-    margin: 10px;
-  }
 }
 #mainNav ul li a {
   padding-bottom: 5px;
@@ -32,10 +26,10 @@ header {
   transition: all 0.5s;
 }
 #mainNav {
-  height: 48px !important;
   text-align: center;
-  line-height: 3;
   text-transform: uppercase;
+  position: relative;
+  height: 50px;
 }
 
 /* stroke */
@@ -80,11 +74,14 @@ header {
   animation: fill 1s forwards;
   opacity: 1;
 }
-.floatleft {
-  float: left;
-}
-.floatright {
-  float: right;
+
+#appTitle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto !important;
+  width: 100px;
+  text-align: center;
 }
 #appTitle a {
   z-index: 1;
