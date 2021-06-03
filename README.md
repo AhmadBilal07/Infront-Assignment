@@ -1,6 +1,10 @@
 # Infront-Assignment
 Infront Programming Assignment. A Stock Portfolio Web Application.
 
+
+### Task
+[PDF](Infront-Assignment-FullStack.pdf)
+
 ### Installation
 
 ## Client
